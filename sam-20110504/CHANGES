@@ -1,0 +1,9 @@
+[Note: If you have installed the initial version, it should be enough to
+copy the *.exe files from the new zip into the existing bin directory,
+if you don't want to replace the entire installation.]
+
+2009-04-07	update sam, fixing CloseHandle issue
+			update du.exe (fix qid.path issue)
+			add some binaries: 9p, diff, hget, p, sha1sum, xd, uniq
+
+2009-04-03	initial package

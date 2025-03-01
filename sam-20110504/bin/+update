@@ -1,0 +1,5 @@
+d=/home/micha/ib/pf9
+for (i in *.exe) {
+	cp $d/mingw/bin/$i .
+	i586-mingw32msvc-strip -s $i
+}

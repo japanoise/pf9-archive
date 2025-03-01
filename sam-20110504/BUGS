@@ -1,0 +1,14 @@
+-	As there is no `inode' defined on Windows file systems,
+	the qid.path member of a `Dir' struct is always set to
+	zero at the moment. This can be a problem if some code
+	relies on qid.path being equal for the same but not for
+	different files.
+
+	In sam this situation is causing a warning about possibly
+	aliased files (io.c:checkqid()), but it seems not to break
+	consistency.
+
+-	When the file descriptor of the server side of a named pipe is
+	closed, it is disconnected only, but the handle is not closed. This
+	causes in an increasing number of used handles for each listen()
+	or pipe() call.	-- FIXED.

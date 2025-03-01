@@ -1,0 +1,25 @@
+cat <<EOF | @{cd $PLAN9 && tar cf - `{cat}} | tar xf -
+./font/misc/README
+./font/misc/letterlike.8
+./font/misc/numbforms.9
+./font/misc/arrows
+./font/misc/math1
+./font/misc/math2
+./font/misc/tech
+./font/misc/chart
+./font/misc/ding
+./font/misc/zapf
+./font/misc/cyrillic.9
+./font/lucm/NOTICE
+./font/lucm/latineur.9
+./font/lucm/ipa.9
+./font/lucm/greek.9
+./font/lucm/genpunc.9
+./font/lucm/supsub.9
+./font/lucm/currency.9
+./font/lucsans/NOTICE
+./font/lucsans/lsr.12
+./font/lucsans/euro.7.font
+./font/lucsans/typelatin1.7.font
+./font/LICENSE
+EOF
